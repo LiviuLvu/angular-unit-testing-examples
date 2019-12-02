@@ -9,8 +9,6 @@ export class ParagraphComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    console.log('> paragraph component was initialized');
-  }
+  ngOnInit() { }
 
 }

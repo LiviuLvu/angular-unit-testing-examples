@@ -5,3 +5,4 @@ import 'zone.js/dist/sync-test';
 import 'zone.js/dist/proxy';
 import 'zone.js/dist/jasmine-patch';
 import './app/paragraph/paragraph.component.spec.ts';
+import './app/file-upload/file-upload.component.spec.ts';

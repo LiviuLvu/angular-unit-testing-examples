@@ -1,5 +1,5 @@
 import { RouterTestingModule } from "@angular/router/testing";
-import { ParagraphComponent } from "./paragraph.component"
+import { ParagraphComponent } from "./paragraph.component";
 import { TestBed, async } from "@angular/core/testing";
 import {
   BrowserDynamicTestingModule,
@@ -19,7 +19,7 @@ describe("ParagraphComponent", () => {
       declarations: [ParagraphComponent]
     }).compileComponents();
   }));
-  it("Should render the component", async(() => {
+  it("should render paragraph component", async(() => {
     const fixture = TestBed.createComponent(ParagraphComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
