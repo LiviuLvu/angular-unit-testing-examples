@@ -1,24 +1,13 @@
-import { RouterTestingModule } from "@angular/router/testing";
+// property bindings example
 import { ParagraphComponent } from "./paragraph.component";
-import { TestBed, async, ComponentFixture } from "@angular/core/testing";
+import { TestBed, ComponentFixture } from "@angular/core/testing";
 import { By } from "@angular/platform-browser";
-import {
-  BrowserDynamicTestingModule,
-  platformBrowserDynamicTesting
-} from "@angular/platform-browser-dynamic/testing";
 
 describe("ParagraphComponent", () => {
   let component: ParagraphComponent;
   let fixture: ComponentFixture<ParagraphComponent>;
   let dbgElement: ComponentFixture;
   let element: HTMLElement;
-
-  beforeAll(() => {
-    TestBed.initTestEnvironment(
-      BrowserDynamicTestingModule,
-      platformBrowserDynamicTesting()
-    );
-  });
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -33,11 +22,11 @@ describe("ParagraphComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should render default message", () => {
+  it("paragraph should contain default message", () => {
     expect(element.innerText).toContain("not specified");
   });
 
-  it("should render phone number", () => {
+  it("paragraph should contain phone number", () => {
     component.phone = "0021000111";
 
     fixture.detectChanges();
