@@ -1,2 +1,13 @@
 /* Add application styles & imports to this file! */
 @import 'jasmine-core/lib/jasmine-core/jasmine.css';
+@import 'purecss/build/pure-min.css';
+
+.layout p {
+  margin: 0px;
+}
+
+.layout > * {
+  margin-top: 10px;
+  display: block;
+  overflow: hidden;
+}
