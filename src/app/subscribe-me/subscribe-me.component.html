@@ -1,8 +1,9 @@
 <div>
 	Newsletter
 	<button
+   *ngIf="!isSubscribed"
     class="pure-button pure-button-primary"
     (click)=onConfirmSubscription();
-  >subscribe</button>
-	<button class="pure-button">cancel</button>
+  >Subscribe</button>
+  <span class="confirmation" *ngIf="isSubscribed">Subscribed</span>
 </div>

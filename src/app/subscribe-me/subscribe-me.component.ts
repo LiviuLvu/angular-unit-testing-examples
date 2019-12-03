@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subscribe-me.component.css']
 })
 export class SubscribeMeComponent implements OnInit {
+  public isSubscribed:boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  public onConfirmSubscription(event) {
+    this.isSubscribed = true;
+  }
 }

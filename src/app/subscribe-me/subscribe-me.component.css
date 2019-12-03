@@ -3,3 +3,7 @@ div {
   background-color: #ffefd1;
   padding: 12px;
 }
+
+.confirmation {
+  font-weight: bold;
+}

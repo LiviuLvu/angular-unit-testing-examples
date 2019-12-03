@@ -2,6 +2,8 @@
 
 import { SubscribeMeComponent } from "./subscribe-me.component";
 import { TestBed, ComponentFixture } from "@angular/core/testing";
+// https://angular.io/api/platform-browser/By
+import { By } from "@angular/platform-browser";
 
 describe("SubscribeMeComponent", () => {
   let component: SubscribeMeComponent;
@@ -18,7 +20,13 @@ describe("SubscribeMeComponent", () => {
     fixture.detectChanges();
   });
 
-  it('should create subscribe-me', () => {
-    expect(component).toBeTruthy();
+  it("should display confirmation on subscribe button click", () => {
+    component.isSubscribed = false;
+    fixture.detectChanges();
+
+    let subscribeButton = fixture.debugElement.query(By.css("button"));
+    subscribeButton.triggerEventHandler("click", null);
+
+    expect(component.isSubscribed).toBe(true);
   });
 });
