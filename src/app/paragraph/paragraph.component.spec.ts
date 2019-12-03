@@ -19,12 +19,12 @@ describe("ParagraphComponent", () => {
       declarations: [ParagraphComponent]
     }).compileComponents();
   }));
-  it("should render paragraph component", async(() => {
+  it("paragraph should contain id", async(() => {
     const fixture = TestBed.createComponent(ParagraphComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector("p").textContent).toContain(
-      "paragraph works!"
+      "test"
     );
   }));
 });
