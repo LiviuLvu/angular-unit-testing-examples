@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-paragraph',
@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./paragraph.component.css']
 })
 export class ParagraphComponent implements OnInit {
+  @Input() public phone: string;
 
   constructor() { }
 
-  ngOnInit() { }
-
+  ngOnInit() { 
+    if(!this.phone) {
+      this.phone = 'not specified';
+    }
+  }
 }

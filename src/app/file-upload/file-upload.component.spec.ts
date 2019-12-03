@@ -1,4 +1,4 @@
-import { RouterTestingModule } from "@angular/router/testing";
+import { RouterTestingModule } from '@angular/router/testing';
 import { FileUploadComponent } from './file-upload.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import {
@@ -20,7 +20,6 @@ describe('FileUploadComponent', () => {
 
     fixture = TestBed.createComponent(FileUploadComponent);
     component = fixture.componentInstance;
-    component.fieldId = 'testFieldId';
 
     fixture.detectChanges();
   }));
