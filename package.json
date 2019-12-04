@@ -2,7 +2,6 @@
   "name": "angular",
   "version": "0.0.0",
   "private": true,
-  // "styles": ["node_modules/purecss@1.0.1/build/pure-min.css"],
   "dependencies": {
     "@angular/common": "^8.2.14",
     "@angular/compiler": "^8.2.14",

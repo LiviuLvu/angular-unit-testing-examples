@@ -7,15 +7,21 @@ import { Component, OnInit } from "@angular/core";
 })
 export class FilterComponent implements OnInit {
   errorMessage: string;
-  isFilterValid;
   selectedFilterName;
-  newFilter;
-  parseAndSaveFilters;
+  newFilter = {name: 'test'};
+
   editFilterMode;
 
   constructor() {}
 
   ngOnInit() {}
+
+  parseAndSaveFilters() {}
+  
+  isFilterValid() {
+    return true;
+  }
+
   saveFilter() {
     this.errorMessage = "";
 

@@ -8,11 +8,13 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 import { SubscribeMeComponent } from './subscribe-me/subscribe-me.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FilterComponent } from './filter/filter.component';
+import { UserSettingsService } from './profile/user-settings.service';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, ParagraphComponent, FileUploadComponent, SubscribeMeComponent, ProfileComponent, FilterComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [UserSettingsService]
 })
 export class AppModule { }

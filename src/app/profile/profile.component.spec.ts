@@ -1,9 +1,11 @@
 // jasmine spy example
 
-import { ProfileComponent } from "./profile.component";
 import { TestBed, ComponentFixture } from "@angular/core/testing";
 // https://angular.io/api/platform-browser/By
 import { By } from "@angular/platform-browser";
+import { of } from "rxjs";
+import { ProfileComponent } from "./profile.component";
+import { UserSettingsService } from "./user-settings.service";
 
 describe("ProfileComponent", () => {
   let component: ProfileComponent;
@@ -11,7 +13,8 @@ describe("ProfileComponent", () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ProfileComponent]
+      declarations: [ProfileComponent],
+      providers: [UserSettingsService]
     });
 
     fixture = TestBed.createComponent(ProfileComponent);

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { UserSettingsService } from "./user-settings.service";
 
 @Component({
   selector: "app-profile",
@@ -6,18 +7,16 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./profile.component.css"]
 })
 export class ProfileComponent implements OnInit {
-  userSettingsService;
   _tableEntityName;
-  getEntity;
-  
-  constructor() {}
+
+  constructor(private userSettingsService: UserSettingsService) {}
 
   ngOnInit() {}
 
   loadProfile(callback, eventData?) {
     this.userSettingsService.getEntity(this._tableEntityName).subscribe(
       res => {
-        const profileData = JSON.parse(get(res["Item"], "entity", "{}"));
+        const profileData = { name: "test" };
         callback(profileData, eventData);
       },
       err => {
