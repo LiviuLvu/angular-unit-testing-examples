@@ -10,6 +10,7 @@ import './app/file-upload/file-upload.component.spec.ts';
 import './app/subscribe-me/subscribe-me.component.spec';
 // import './app/profile/profile.component.spec';
 import './app/filter/filter.component.spec';
+import './app/pipe/minutes-to-hours.pipe.spec.ts';
 
 import { getTestBed } from '@angular/core/testing';
 import {

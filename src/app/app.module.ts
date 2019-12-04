@@ -9,11 +9,12 @@ import { SubscribeMeComponent } from './subscribe-me/subscribe-me.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FilterComponent } from './filter/filter.component';
 import { UserSettingsService } from './profile/user-settings.service';
+import { MinutesToHoursPipe } from './pipe/minutes-to-hours.pipe';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, ParagraphComponent, FileUploadComponent, SubscribeMeComponent, ProfileComponent, FilterComponent ],
+  declarations: [ AppComponent, ParagraphComponent, FileUploadComponent, SubscribeMeComponent, ProfileComponent, FilterComponent, MinutesToHoursPipe ],
   bootstrap:    [ AppComponent ],
   providers: [UserSettingsService]
 })
