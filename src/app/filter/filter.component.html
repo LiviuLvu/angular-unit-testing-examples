@@ -1,0 +1,9 @@
+<div class="filter-wrapper">
+    <div class="filter-field">
+        <label class="label">Add a new filter:</label>
+        <input type="text" class="input" [(ngModel)]="newFilter.name" placeholder="Name" maxlength="256" />
+    </div>
+    <button class="btn" id="saveNewFilterBtn" (click)="saveFilter()">
+        Save Filter
+    </button>
+</div>
