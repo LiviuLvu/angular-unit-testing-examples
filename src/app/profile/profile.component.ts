@@ -8,10 +8,12 @@ import { Component, OnInit } from "@angular/core";
 export class ProfileComponent implements OnInit {
   userSettingsService;
   _tableEntityName;
+  getEntity;
   
   constructor() {}
 
   ngOnInit() {}
+
   loadProfile(callback, eventData?) {
     this.userSettingsService.getEntity(this._tableEntityName).subscribe(
       res => {
