@@ -10,8 +10,8 @@ export class ParagraphComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { 
-    if(!this.phone) {
+  ngOnInit() {
+    if (!this.phone) {
       this.phone = 'not specified';
     }
   }

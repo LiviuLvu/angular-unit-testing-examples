@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-file-upload',
@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild, ElementRef, SimpleChanges } from '@angula
   styleUrls: ['./file-upload.component.css']
 })
 export class FileUploadComponent implements OnInit {
-  @ViewChild('fileInput') public fileInput: ElementRef;
+  // @ViewChild('fileInput') public fileInput: ElementRef;
 
   constructor() { }
 

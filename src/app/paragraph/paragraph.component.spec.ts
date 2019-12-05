@@ -2,11 +2,12 @@
 import { ParagraphComponent } from "./paragraph.component";
 import { TestBed, ComponentFixture } from "@angular/core/testing";
 import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
 
 describe("ParagraphComponent", () => {
   let component: ParagraphComponent;
   let fixture: ComponentFixture<ParagraphComponent>;
-  let dbgElement: ComponentFixture;
+  let dbgElement: DebugElement;
   let element: HTMLElement;
 
   beforeEach(() => {
