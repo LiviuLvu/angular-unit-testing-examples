@@ -7,16 +7,14 @@ import { UserSettingsService } from "./user-settings.service";
   styleUrls: ["./profile.component.css"]
 })
 export class ProfileComponent implements OnInit {
-  _tableEntityName;
-
-  constructor(private userSettingsService: UserSettingsService) {}
+  constructor(public userSettingsService: UserSettingsService) {}
 
   ngOnInit() {}
 
   loadProfile(callback, eventData?) {
-    this.userSettingsService.getEntity(this._tableEntityName).subscribe(
+    this.userSettingsService.getEntity().subscribe(
       res => {
-        const profileData = { name: "test" };
+        const profileData = { name: res };
         callback(profileData, eventData);
       },
       err => {

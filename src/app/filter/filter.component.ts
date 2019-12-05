@@ -17,7 +17,7 @@ export class FilterComponent implements OnInit {
   ngOnInit() {}
 
   parseAndSaveFilters() {}
-  
+
   isFilterValid() {
     return true;
   }

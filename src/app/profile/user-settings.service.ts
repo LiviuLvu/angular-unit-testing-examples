@@ -6,10 +6,10 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class UserSettingsService {
 
-  constructor(private _http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  getEntity(id): Observable<any> {
-    return this._http.get('STORAGE_URL');
+  getEntity(): Observable<any> {
+    return this.http.get('STORAGE_URL');
   }
 
 }

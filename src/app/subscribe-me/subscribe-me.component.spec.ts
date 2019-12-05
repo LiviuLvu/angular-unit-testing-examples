@@ -24,7 +24,7 @@ describe("SubscribeMeComponent", () => {
     component.isSubscribed = false;
     fixture.detectChanges();
 
-    let subscribeButton = fixture.debugElement.query(By.css("button"));
+    const subscribeButton = fixture.debugElement.query(By.css("button"));
     subscribeButton.triggerEventHandler("click", null);
 
     expect(component.isSubscribed).toBe(true);

@@ -2,7 +2,6 @@
 
 import { TestBed, ComponentFixture } from "@angular/core/testing";
 // https://angular.io/api/platform-browser/By
-import { By } from "@angular/platform-browser";
 import { of } from "rxjs";
 import { ProfileComponent } from "./profile.component";
 import { UserSettingsService } from "./user-settings.service";
@@ -29,7 +28,7 @@ xdescribe("ProfileComponent", () => {
         err: "test error"
       })
     );
-    let callbackSpy = jasmine.createSpy();
+    const callbackSpy = jasmine.createSpy();
 
     component.loadProfile(callbackSpy);
 

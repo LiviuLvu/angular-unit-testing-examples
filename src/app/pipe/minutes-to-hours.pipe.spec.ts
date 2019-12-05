@@ -1,7 +1,7 @@
 import { MinutesToHoursPipe } from './minutes-to-hours.pipe';
 
 describe('MinutesToHoursPipe', () => {
-  let pipe = new MinutesToHoursPipe();
+  const pipe = new MinutesToHoursPipe();
 
   it('return same value if undefined', () => {
     expect(pipe.transform(undefined)).toBe(undefined);

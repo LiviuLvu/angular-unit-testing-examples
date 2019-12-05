@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ParagraphComponent } from './paragraph/paragraph.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
 import { SubscribeMeComponent } from './subscribe-me/subscribe-me.component';
-// import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './profile/profile.component';
 import { FilterComponent } from './filter/filter.component';
 import { UserSettingsService } from './profile/user-settings.service';
 import { MinutesToHoursPipe } from './pipe/minutes-to-hours.pipe';
@@ -17,7 +17,7 @@ import { MinutesToHoursPipe } from './pipe/minutes-to-hours.pipe';
     ParagraphComponent,
     FileUploadComponent,
     SubscribeMeComponent,
-    // ProfileComponent,
+    ProfileComponent,
     FilterComponent,
     MinutesToHoursPipe
   ],
