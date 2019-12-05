@@ -1,27 +1,28 @@
-# TestBaseClean
+# Unit tests examples with angular and jasmine
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+Use master branch to run the project locally
 
-## Development server
+Use for-stackblitz-environment branch to test project in stackblitz
+https://stackblitz.com/edit/angular-unit-testing-examples
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Article accompanying this repository    
+https://medium.com/p/b397824c8a6c/edit
 
-## Code scaffolding
+Comparison table for online code editors
+https://docs.google.com/spreadsheets/d/1R2ld2GtHrsO2XKYbr9pfOL6eyQ_0zgx4KfwxIQNdb9o/edit?usp=sharing
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+###### This project was generated with Angular CLI version 8.3.9
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running unit tests
+`ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running end-to-end tests
+`ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+`ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+###### To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
